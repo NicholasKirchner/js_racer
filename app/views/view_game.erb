@@ -1,0 +1,12 @@
+<div class="container">
+  <h2> From the history books: </h2>
+  <p> Game number <%= @game.id %> </p>
+  Players:
+  <ul>
+    <% @game.players.each do |player| %>
+      <li> <%= player.name %> </li>
+    <% end %>
+  </ul>
+  <p> Played at <%= @game.created_at %></p>
+  <p> Won by <%= @game.winner %> in <%= @game.time %> milliseconds </p>
+</div>

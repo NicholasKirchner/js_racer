@@ -1,0 +1,85 @@
+<html>
+<head>
+  <link rel="stylesheet" href="/css/normalize.css">
+  <link rel="stylesheet" href="/css/board.css">
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <script type="text/javascript" src="/js/racer.js"></script>
+  <title>Javascript Racer</title>
+</head>
+<body>
+  <table class="racer_table">
+    <tr id="player1_strip">
+      <td class="p_name"><%= @player1.name %></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr id="player2_strip">
+      <td class="p_name"><%= @player2.name %></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </table>
+
+  <div class="results">
+    <h4> We have a winner! </h4>
+    <p> <span id="winner"></span> won this game in <span id="time"></span> milliseconds</p>
+    <p> You can review the results <a href="#">here</a> </p>
+    <button id="rematch">Rematch!</button>
+    <form action="/" method="get">
+      <input type="submit" value="New Contestants">
+    </form>
+  </div>
+</body>
+</html>
